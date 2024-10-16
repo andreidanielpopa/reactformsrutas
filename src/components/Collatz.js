@@ -7,7 +7,7 @@ export default class Collatz extends Component {
         listanumeros: [],
     }
 
-   
+
     peticionForm = (e) => {
         e.preventDefault();
         let numero = parseInt(this.cajaNumero.current.value);
@@ -21,6 +21,7 @@ export default class Collatz extends Component {
                 lista.push(numero);
             }
         } while (numero !== 1)
+
         this.setState({
             listanumeros: lista,
         })
